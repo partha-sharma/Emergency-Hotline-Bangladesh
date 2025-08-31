@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <!-- Top Header -->
+        <div class="flex justify-between items-center px-6 py-3">
+            <div class="flex items-center gap-3">
+                <img src="./assets/logo.png" alt="Emergency Hotline Bangladesh" class="h-10">
+                <div>
+                    <div class="text-green-800 font-bold text-lg leading-tight">Emergency</div>
+                    <div class="text-green-800 font-bold text-lg leading-tight">Service</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <!-- Heart Score -->
+                <div class="flex items-center gap-1 bg-green-50 px-3 py-1 rounded-full border">
+                    <span id="heart-count" class="font-semibold text-gray-800">0</span>
+                    <img src="./assets/heart.png" alt="heart" class="h-4 w-4">
+                </div>
+                <!-- Coin Score -->
+                <div class="flex items-center gap-1 bg-gray-100 px-3 py-1 rounded-full border">
+                    <span id="coin-count" class="font-semibold text-gray-800">100</span>
+                    <img src="./assets/coin.png" alt="coin" class="h-4 w-4">
+                </div>
+                <!-- Copy Count Button -->
+                <button id="copy-count-btn" class="btn btn-success btn-sm rounded-full">
+                    <span id="copy-count">0</span> Copy
+                </button>
+            </div>
+        </div>
+
+
+
+        
+    <script src="./script.js"></script>
 </body>
 </html>
